@@ -1,1 +1,2 @@
 init: setup Spring Boot project with Thymeleaf @ 2024-09-01 13:55:05.149241
+chore: configure application.properties for dev @ 2024-09-04 13:55:05.149241
