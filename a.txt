@@ -2,3 +2,4 @@ init: setup Spring Boot project with Thymeleaf @ 2024-09-01 13:55:05.149241
 chore: configure application.properties for dev @ 2024-09-04 13:55:05.149241
 chore: add .gitignore and basic README @ 2024-09-07 13:55:05.149241
 feat(home): add hero section with logo and nav bar @ 2024-09-10 13:55:05.149241
+feat(home): implement Our Products section @ 2024-09-13 13:55:05.149241
