@@ -5,3 +5,4 @@ feat(home): add hero section with logo and nav bar @ 2024-09-10 13:55:05.149241
 feat(home): implement Our Products section @ 2024-09-13 13:55:05.149241
 feat(home): add Moroccan Scents gallery @ 2024-09-16 13:55:05.149241
 feat(home): build Unlock Your Skin's Potential section @ 2024-09-19 13:55:05.149241
+style(home): apply global typography and colors @ 2024-09-22 13:55:05.149241
