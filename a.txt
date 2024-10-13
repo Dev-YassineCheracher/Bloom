@@ -12,3 +12,4 @@ feat(about): add story sections and toggle button @ 2024-10-01 13:55:05.149241
 fix(about): handle View More toggle logic in JS @ 2024-10-04 13:55:05.149241
 style(about): adjust heading styles and spacing @ 2024-10-07 13:55:05.149241
 feat(collection): implement collection page layout @ 2024-10-10 13:55:05.149241
+feat(product): add Decadent Cream detail page @ 2024-10-13 13:55:05.149241
