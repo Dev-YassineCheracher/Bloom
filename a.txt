@@ -14,3 +14,4 @@ style(about): adjust heading styles and spacing @ 2024-10-07 13:55:05.149241
 feat(collection): implement collection page layout @ 2024-10-10 13:55:05.149241
 feat(product): add Decadent Cream detail page @ 2024-10-13 13:55:05.149241
 feat(product): add Double Dip Cream detail page @ 2024-10-16 13:55:05.149241
+feat(product): add Gold Elixir Cream detail page @ 2024-10-19 13:55:05.149241
