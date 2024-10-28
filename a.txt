@@ -17,3 +17,4 @@ feat(product): add Double Dip Cream detail page @ 2024-10-16 13:55:05.149241
 feat(product): add Gold Elixir Cream detail page @ 2024-10-19 13:55:05.149241
 feat(product): add Hydra Gel Cream detail page @ 2024-10-22 13:55:05.149241
 fix(product): correct product titles and video sources @ 2024-10-25 13:55:05.149241
+style(product): improve product detail layout @ 2024-10-28 13:55:05.149241
