@@ -23,3 +23,4 @@ style(css): improve responsive grid for mobile @ 2024-11-03 13:55:05.149241
 fix(nav): fix broken links in navigation @ 2024-11-06 13:55:05.149241
 fix(footer): align newsletter input and button @ 2024-11-09 13:55:05.149241
 chore: remove unused assets and comments @ 2024-11-12 13:55:05.149241
+feat(footer): add newsletter subscription form @ 2024-11-15 13:55:05.149241
