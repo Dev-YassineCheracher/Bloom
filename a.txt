@@ -25,3 +25,4 @@ fix(footer): align newsletter input and button @ 2024-11-09 13:55:05.149241
 chore: remove unused assets and comments @ 2024-11-12 13:55:05.149241
 feat(footer): add newsletter subscription form @ 2024-11-15 13:55:05.149241
 docs: update README with setup instructions @ 2024-11-18 13:55:05.149241
+chore: clean up CSS and HTML for production @ 2024-11-21 13:55:05.149241
