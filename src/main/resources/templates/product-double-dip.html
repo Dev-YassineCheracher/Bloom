@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom - Double Dip Cream</title>
+  <!-- Google Fonts and local fonts from existing pages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lovelace:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lovelo:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+  <!-- Header (simple version for inner pages) -->
+  <header class="hero-header-simple">
+    <nav class="hero-header">
+      <div class="bar-left">
+          <a href="/" class="item">Home</a>
+          <a href="/collection" class="item active">Collection</a>
+      </div>
+      <div class="logo">
+        <img th:src="@{/assets/logo.png}" alt="Bloom Logo">
+      </div>
+      <div class="bar-right">
+        <a class="item" href="about">About Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="product-page-main">
+    <!-- PRODUCT DISPLAY SECTION -->
+    <section class="product-display">
+      <div class="product-media">
+        <video autoplay loop muted playsinline th:src="@{/assets/double-dip.mp4}" class="product-video"></video>
+        <!-- <div class="scroll-prompt">
+          <img src="../static/chatbot-icon.png" alt="robot icon">
+          <a href="#product-info-deep">key ingredients ↓</a>
+        </div> -->
+      </div>
+      <div class="product-details">
+        <h1 class="product-title-main">Decdent Cream</h1>
+        <div class="reviews-summary">
+          <span class="stars">★★★★★</span>
+          <span class="review-count">212 Reviews</span>
+        </div>
+        <p class="shipping-info">Ships to: P.O Box 104, Hassan II Avenue, 53000 Ifrane, Morocco</p>
+        <!-- <div class="ingredient-icons">
+          <img src="../static/aloe-icon.png" alt="Aloe Vera Icon">
+          <img src="../static/oil-icon.png" alt="Prickly Pear Oil Icon">
+        </div> -->
+        <p class="stock-status">in stock</p>
+        <div class="size-selector">
+          <button class="size-option active" data-size="100ml">100ml</button>
+          <button class="size-option" data-size="200m">200ml</button>
+        </div>
+        <div class="quantity-selector">
+          <button class="quantity-btn minus">-</button>
+          <div class="quantity-display">
+            <span class="quantity-number">1</span>
+            <span class="quantity-label">unit</span>
+          </div>
+          <button class="quantity-btn plus">+</button>
+        </div>
+        <button class="add-to-cart-btn">add to cart</button>
+      </div>
+    </section>
+
+    <!-- DETAILED INFO SECTION -->
+    <section id="product-info-deep" class="product-info-deep">
+      <div class="info-grid">
+        <h2 class="info-heading">DESCRIPTION:</h2>
+        <p class="info-text">Our day cream for mature skin is specially formulated to address the unique needs of aging skin. Enriched with nourishing ingredients, namely Rugulopteryx okamurae seaweed extract, this cream hydrates, firms, and reduces the appearance of fine lines and wrinkles, promoting a more youthful complexion.</p>
+        
+        <h2 class="info-heading">KEY INGREDIENTS:</h2>
+        <p class="info-text">R. okamurae Algae Extract, Prickly Pear Seed Oil, Argan Oil, Vitamin E Oil, Aloe Vera Gel, Beeswax.</p>
+        
+        <h2 class="info-heading">HOW TO USE:</h2>
+        <p class="info-text">Apply a small amount of cream to cleansed skin, gently massaging in upward motions until absorbed. Use daily for best results.</p>
+      </div>
+    </section>
+    
+    <!-- PACKAGING SECTION -->
+    <section class="product-packaging">
+      <div class="packaging-content">
+        <h2>OUR PACKAGING</h2>
+        <p>Discover sustainability with our eco-conscious packaging, featuring glass bottles with wooden caps and biodegradable cartons with Ankara finishes. Sourced from Casablanca fashion designers, our Ankara adds a unique touch while reducing waste.</p>
+      </div>
+      <div class="packaging-gallery">
+        <img th:src="@{/assets/packaging.png}" alt="Eco-friendly packaging for Bloom products">
+        <!-- <button class="gallery-arrow prev">⟨</button>
+        <button class="gallery-arrow next">⟩</button> -->
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="product-reviews">
+      <div class="reviews-header">
+        <div class="rating-summary">
+          <span class="rating-number">5.0</span>
+          <div class="rating-stars-breakdown">
+            <div><span class="stars">★★★★★</span> (821 Reviews)</div>
+            <div><span class="stars">★★★★☆</span> (0 Reviews)</div>
+            <div><span class="stars">★★★☆☆</span> (0 Reviews)</div>
+            <div><span class="stars">★★☆☆☆</span> (0 Reviews)</div>
+            <div><span class="stars">★☆☆☆☆</span> (0 Reviews)</div>
+          </div>
+        </div>
+        <div class="review-actions">
+          <button class="ask-question-btn">Ask Question</button>
+          <button class="write-review-btn">Write a Review</button>
+        </div>
+      </div>
+
+      <div class="customer-reviews-list">
+        <!-- Review 1 -->
+        <article class="review-card">
+          <div class="review-author">
+            <h3>Khadija B.</h3>
+            <p>Verified Purchase</p>
+          </div>
+          <div class="review-content">
+            <div class="review-meta">
+              <span class="stars">★★★★★</span>
+              <span class="review-date">2 days ago</span>
+            </div>
+            <h4>AMAZING</h4>
+            <p>This day cream is incredible! It hydrates without feeling heavy and gives a radiant glow that lasts all day. I love how it smooths out my skin, making it a perfect base for makeup.</p>
+          </div>
+        </article>
+        <!-- Review 2 -->
+        <article class="review-card">
+          <div class="review-author">
+            <h3>Manal A.</h3>
+            <p>Verified Purchase</p>
+          </div>
+          <div class="review-content">
+            <div class="review-meta">
+              <span class="stars">★★★★★</span>
+              <span class="review-date">3 days ago</span>
+            </div>
+            <h4>REFRESHING</h4>
+            <p>The day cream has a light, refreshing texture that hydrates without leaving any residue. It revitalizes my skin, giving it a smooth and healthy glow. Perfect for daily use!</p>
+          </div>
+        </article>
+        <!-- Review 3 -->
+        <article class="review-card">
+          <div class="review-author">
+            <h3>Ahmed I.</h3>
+            <p>Verified Purchase</p>
+          </div>
+          <div class="review-content">
+            <div class="review-meta">
+              <span class="stars">★★★★★</span>
+              <span class="review-date">4 days ago</span>
+            </div>
+            <h4>SUPERBLY EFFECTIVE</h4>
+            <p>This day cream is excellent! It moisturizes effectively without feeling greasy and offers sun protection, making it ideal for my morning routine. Leaves my skin feeling soft and protected throughout the day.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="newsletter">
+      <span>Newsletter</span>
+      <input type="email" placeholder="Your email">
+      <button>→</button>
+    </div>
+    <div class="footer-logo">
+      <img th:src="@{/assets/logo.png}" alt="Bloom Logo">
+    </div>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Experience</a>
+      <a href="#">News</a>
+      <a href="#">About us</a>
+      <a href="#">Jobs</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="review-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-modal-btn">&times;</button>
+      <h2>Write a Review</h2>
+      <form id="review-form">
+        <div class="form-group">
+          <label for="reviewer-name">Your Name</label>
+          <input type="text" id="reviewer-name" required>
+        </div>
+        <div class="form-group">
+          <label>Rating</label>
+          <div class="star-rating">
+            <input type="radio" id="5-stars" name="rating" value="5" required/><label for="5-stars">★</label>
+            <input type="radio" id="4-stars" name="rating" value="4" /><label for="4-stars">★</label>
+            <input type="radio" id="3-stars" name="rating" value="3" /><label for="3-stars">★</label>
+            <input type="radio" id="2-stars" name="rating" value="2" /><label for="2-stars">★</label>
+            <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star">★</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="review-title">Review Title</label>
+          <input type="text" id="review-title" required>
+        </div>
+        <div class="form-group">
+          <label for="review-text">Review</label>
+          <textarea id="review-text" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Review</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="question-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-modal-btn">&times;</button>
+      <h2>Ask a Question</h2>
+      <form id="question-form">
+        <p>Your question will be sent to our customer service team.</p>
+        <div class="form-group">
+          <label for="questioner-name">Your Name</label>
+          <input type="text" id="questioner-name" required>
+        </div>
+        <div class="form-group">
+          <label for="questioner-email">Your Email</label>
+          <input type="email" id="questioner-email" required>
+        </div>
+        <div class="form-group">
+          <label for="question-text">Question</label>
+          <textarea id="question-text" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Question</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // --- Product Interaction Logic ---
+      const sizeSelector = document.querySelector('.size-selector');
+      const quantityNumberEl = document.querySelector('.quantity-number');
+      const plusBtn = document.querySelector('.quantity-btn.plus');
+      const minusBtn = document.querySelector('.quantity-btn.minus');
+      const addToCartBtn = document.querySelector('.add-to-cart-btn');
+
+      let currentQuantity = 1;
+
+      // Size selection
+      sizeSelector.addEventListener('click', (e) => {
+        if (e.target.classList.contains('size-option')) {
+          // Remove active class from all size buttons
+          sizeSelector.querySelectorAll('.size-option').forEach(btn => btn.classList.remove('active'));
+          // Add active class to the clicked one
+          e.target.classList.add('active');
+        }
+      });
+
+      // Quantity selection
+      plusBtn.addEventListener('click', () => {
+        currentQuantity++;
+        quantityNumberEl.textContent = currentQuantity;
+      });
+
+      minusBtn.addEventListener('click', () => {
+        if (currentQuantity > 1) {
+          currentQuantity--;
+          quantityNumberEl.textContent = currentQuantity;
+        }
+      });
+
+      // Add to cart
+      addToCartBtn.addEventListener('click', () => {
+        const selectedSize = document.querySelector('.size-option.active').dataset.size;
+        const productName = document.querySelector('.product-title-main').textContent;
+
+        console.log(`Added to cart: ${currentQuantity}x ${productName} (${selectedSize})`);
+        
+        // Visual feedback
+        addToCartBtn.textContent = 'Added!';
+        addToCartBtn.style.backgroundColor = '#4CAF50';
+        setTimeout(() => {
+          addToCartBtn.textContent = 'add to cart';
+          addToCartBtn.style.backgroundColor = ''; // Reverts to CSS color
+        }, 2000);
+      });
+
+      // --- Modal Logic ---
+      const reviewModal = document.getElementById('review-modal');
+      const questionModal = document.getElementById('question-modal');
+      const openReviewModalBtn = document.querySelector('.write-review-btn');
+      const openQuestionModalBtn = document.querySelector('.ask-question-btn');
+      const closeButtons = document.querySelectorAll('.close-modal-btn');
+
+      const openModal = (modal) => modal.classList.remove('hidden');
+      const closeModal = (modal) => modal.classList.add('hidden');
+
+      openReviewModalBtn.addEventListener('click', () => openModal(reviewModal));
+      openQuestionModalBtn.addEventListener('click', () => openModal(questionModal));
+
+      closeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          closeModal(reviewModal);
+          closeModal(questionModal);
+        });
+      });
+      
+      // Close modal by clicking overlay
+      document.querySelectorAll('.modal').forEach(modal => {
+          modal.addEventListener('click', (e) => {
+              if(e.target === modal) {
+                  closeModal(modal);
+              }
+          });
+      });
+
+
+      // --- Review Form Logic ---
+      const reviewForm = document.getElementById('review-form');
+      const reviewsList = document.querySelector('.customer-reviews-list');
+
+      reviewForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('reviewer-name').value;
+        const rating = reviewForm.querySelector('input[name="rating"]:checked').value;
+        const title = document.getElementById('review-title').value;
+        const reviewText = document.getElementById('review-text').value;
+
+        const starsHTML = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+
+        const newReviewHTML = `
+          <article class="review-card">
+            <div class="review-author">
+              <h3>${name}</h3>
+              <p>New Review</p>
+            </div>
+            <div class="review-content">
+              <div class="review-meta">
+                <span class="stars">${starsHTML}</span>
+                <span class="review-date">Just now</span>
+              </div>
+              <h4>${title}</h4>
+              <p>${reviewText}</p>
+            </div>
+          </article>
+        `;
+
+        reviewsList.insertAdjacentHTML('afterbegin', newReviewHTML);
+        reviewForm.reset();
+        closeModal(reviewModal);
+      });
+
+      // --- Question Form Logic ---
+      const questionForm = document.getElementById('question-form');
+
+      questionForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('questioner-name').value;
+        const email = document.getElementById('questioner-email').value;
+        const question = document.getElementById('question-text').value;
+        
+        const subject = `Question about Double Dip Cream from ${name}`;
+        const body = `Name: ${name}\nEmail: ${email}\n\nQuestion:\n${question}`;
+        
+        // This will open the user's default email client
+        window.location.href = `mailto:support@bloomskin.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        questionForm.reset();
+        closeModal(questionModal);
+      });
+    });
+  </script>
+</body>
+</html>

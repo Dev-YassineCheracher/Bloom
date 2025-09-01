@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom - About Us</title>
+  <!-- Google Fonts and local fonts from existing pages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lovelace:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lovelo:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero-header-simple">
+    <nav class="hero-header">
+      <div class="bar-left">
+          <a href="/" class="item">Home</a>
+          <a href="collection" class="item">Collection</a>
+      </div>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Bloom Logo">
+      </div>
+      <div class="bar-right">
+        <a class="item active" href="#">About Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="about-us-container">
+    <h1 class="about-title">ABOUT US.</h1>
+
+    <section class="story-section">
+      <div class="story-content">
+        <h2 class="story-heading">Our Journey Begins With a Shared Vision:</h2>
+        <p>In the heart of Morocco, four young women embarked on a journey fueled by a shared passion for the environment and a dream to make a difference. United by our commitment to sustainability and the beauty of our natural world, we founded Bloom, a pioneering beauty brand dedicated to harnessing the untapped potential of the ocean’s bounty.</p>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <h2 class="story-heading">Turning Ocean Waste Into Ocean Wealth</h2>
+      <p>The ocean is not just water; it’s a treasure trove of untapped resources. Among these, algae stood out to us as a symbol of resilience and abundance. However, it’s often overlooked as mere waste. Driven by innovation and a deep respect for our planet, we decided to transform this “waste” into wealth. Our flagship ingredient, sustainably sourced algae, is harvested with care from the Moroccan coast, turning a potential pollutant into the cornerstone of our beauty line.</p>
+    </section>
+
+    <!-- Content to be revealed -->
+    <div id="more-content" class="hidden-story">
+      
+
+
+      <section class="story-section">
+          <h2 class="story-heading">A Commitment to Purity and Planet</h2>
+          <p>At Bloom, every product tells a story of transformation – from the ocean’s depths to your skincare routine. Our 100% Made in Morocco beauty line is a testament to the power of natural ingredients, meticulously crafted to meet the highest standards of efficacy and sustainability. By utilizing algae, we’re not just creating skincare; we’re promoting a cycle of renewal that respects the earth and our bodies.</p>
+      </section>
+      
+      <section class="story-section">
+          <h2 class="story-heading">Welcome to the Bloom Family</h2>
+          <p>We invite you to explore our range of products and become part of a community that values beauty, health, and the planet. With Bloom, you’re not just choosing sustainable skincare; you’re supporting a vision of a world where beauty and nature thrive together. Welcome to our family.</p>
+      </section>
+    </div>
+    
+    <button id="toggle-content-btn" class="view-less-btn">View More</button>
+
+  </main>
+
+  <!-- Footer -->
+   <!-- Footer -->
+  <footer>
+    <div class="newsletter">
+      <span>Newsletter</span>
+      <input type="email" placeholder="Your email">
+      <button>→</button>
+    </div>
+    <div class="footer-logo">
+      <img src="assets/logo.png" alt="Bloom Logo">
+    </div>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Experience</a>
+      <a href="#">News</a>
+      <a href="#">About us</a>
+      <a href="#">Jobs</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('toggle-content-btn');
+      const moreContent = document.getElementById('more-content');
+
+      if (toggleBtn && moreContent) {
+        toggleBtn.addEventListener('click', () => {
+          // Check if the content is currently hidden by checking the class
+          const isHidden = moreContent.classList.contains('hidden-story');
+
+          if (isHidden) {
+            moreContent.classList.remove('hidden-story');
+            toggleBtn.textContent = 'View Less';
+          } else {
+            moreContent.classList.add('hidden-story');
+            toggleBtn.textContent = 'View More';
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
